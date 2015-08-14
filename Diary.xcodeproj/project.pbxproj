@@ -10,11 +10,13 @@
 		BD1751DC1B7E0A01005A7A32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1751DB1B7E0A01005A7A32 /* main.m */; };
 		BD1751DF1B7E0A01005A7A32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1751DE1B7E0A01005A7A32 /* AppDelegate.m */; };
 		BD1751E21B7E0A01005A7A32 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD1751E01B7E0A01005A7A32 /* Diary.xcdatamodeld */; };
-		BD1751E51B7E0A01005A7A32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1751E41B7E0A01005A7A32 /* ViewController.m */; };
 		BD1751E81B7E0A01005A7A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1751E61B7E0A01005A7A32 /* Main.storyboard */; };
 		BD1751EA1B7E0A01005A7A32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1751E91B7E0A01005A7A32 /* Images.xcassets */; };
 		BD1751ED1B7E0A01005A7A32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1751EB1B7E0A01005A7A32 /* LaunchScreen.xib */; };
 		BD1751F91B7E0A01005A7A32 /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1751F81B7E0A01005A7A32 /* DiaryTests.m */; };
+		BD1752041B7E0A1A005A7A32 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752031B7E0A1A005A7A32 /* CoreDataStack.m */; };
+		BD1752071B7E0F57005A7A32 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752061B7E0F57005A7A32 /* DiaryEntry.m */; };
+		BD17520A1B7E1AA1005A7A32 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752091B7E1AA1005A7A32 /* NewEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +36,18 @@
 		BD1751DD1B7E0A01005A7A32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD1751DE1B7E0A01005A7A32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BD1751E11B7E0A01005A7A32 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
-		BD1751E31B7E0A01005A7A32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BD1751E41B7E0A01005A7A32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BD1751E71B7E0A01005A7A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD1751E91B7E0A01005A7A32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BD1751EC1B7E0A01005A7A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BD1751F21B7E0A01005A7A32 /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1751F71B7E0A01005A7A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD1751F81B7E0A01005A7A32 /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
+		BD1752021B7E0A1A005A7A32 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		BD1752031B7E0A1A005A7A32 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		BD1752051B7E0F57005A7A32 /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = "<group>"; };
+		BD1752061B7E0F57005A7A32 /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = "<group>"; };
+		BD1752081B7E1AA1005A7A32 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
+		BD1752091B7E1AA1005A7A32 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +91,17 @@
 			children = (
 				BD1751DD1B7E0A01005A7A32 /* AppDelegate.h */,
 				BD1751DE1B7E0A01005A7A32 /* AppDelegate.m */,
-				BD1751E31B7E0A01005A7A32 /* ViewController.h */,
-				BD1751E41B7E0A01005A7A32 /* ViewController.m */,
 				BD1751E61B7E0A01005A7A32 /* Main.storyboard */,
+				BD1752081B7E1AA1005A7A32 /* NewEntryViewController.h */,
+				BD1752091B7E1AA1005A7A32 /* NewEntryViewController.m */,
 				BD1751E91B7E0A01005A7A32 /* Images.xcassets */,
 				BD1751EB1B7E0A01005A7A32 /* LaunchScreen.xib */,
 				BD1751E01B7E0A01005A7A32 /* Diary.xcdatamodeld */,
+				BD1752051B7E0F57005A7A32 /* DiaryEntry.h */,
+				BD1752061B7E0F57005A7A32 /* DiaryEntry.m */,
 				BD1751D91B7E0A01005A7A32 /* Supporting Files */,
+				BD1752021B7E0A1A005A7A32 /* CoreDataStack.h */,
+				BD1752031B7E0A1A005A7A32 /* CoreDataStack.m */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -222,9 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1752041B7E0A1A005A7A32 /* CoreDataStack.m in Sources */,
 				BD1751E21B7E0A01005A7A32 /* Diary.xcdatamodeld in Sources */,
+				BD17520A1B7E1AA1005A7A32 /* NewEntryViewController.m in Sources */,
+				BD1752071B7E0F57005A7A32 /* DiaryEntry.m in Sources */,
 				BD1751DF1B7E0A01005A7A32 /* AppDelegate.m in Sources */,
-				BD1751E51B7E0A01005A7A32 /* ViewController.m in Sources */,
 				BD1751DC1B7E0A01005A7A32 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
