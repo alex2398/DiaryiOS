@@ -6,19 +6,23 @@
 //  Copyright (c) 2015 Alex Valladares. All rights reserved.
 //
 
-#import "NewEntryViewController.h"
+#import "EntryViewController.h"
 #import "CoreDataStack.h"
 #import "DiaryEntry.h"
+#import "EntryCell.h"
+#import "EntryListTableViewController.h"
 
-@interface NewEntryViewController ()
+@interface EntryViewController ()
 
 @end
 
-@implementation NewEntryViewController
+@implementation EntryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    if (self.entry != nil) {
+        self.textField.text = self.entry.body;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,7 +41,13 @@
 */
 
 - (IBAction)doneWhenPressed:(id)sender {
-    [self insertDiaryEntry];
+    // Al pulsar en done, si la entrada ya existe, la actualizamos
+    // Si no, la creamos nueva
+    if (self.entry != nil) {
+        [self updateDiaryEntry];
+    } else {
+        [self insertDiaryEntry];
+    }
     [self dismissSelf];
 }
 
@@ -50,6 +60,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// Insertar entrada
 - (void) insertDiaryEntry {
     // Obtenemos acceso al coreData
     CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
@@ -59,11 +70,16 @@
     entry.body = self.textField.text;
     // Hora actual en segundos desde 1970
     entry.date = [[NSDate date] timeIntervalSince1970];
+    // Salvamos los datos
     [coreDataStack saveContext];
     
-    
-    
-    
+}
+
+// Actualizar entrada
+- (void) updateDiaryEntry {
+    self.entry.body = self.textField.text;
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    [coreDataStack saveContext];
     
 }
 @end

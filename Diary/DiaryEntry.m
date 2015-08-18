@@ -17,4 +17,14 @@
 @dynamic mood;
 @dynamic location;
 
+// Guardamos la fecha actual en el campo SectionName
+- (NSString*) sectionName {
+    
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"MMM yyy"];
+    
+    return [formatter stringFromDate:date];
+    
+}
 @end

@@ -16,7 +16,10 @@
 		BD1751F91B7E0A01005A7A32 /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1751F81B7E0A01005A7A32 /* DiaryTests.m */; };
 		BD1752041B7E0A1A005A7A32 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752031B7E0A1A005A7A32 /* CoreDataStack.m */; };
 		BD1752071B7E0F57005A7A32 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752061B7E0F57005A7A32 /* DiaryEntry.m */; };
-		BD17520A1B7E1AA1005A7A32 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752091B7E1AA1005A7A32 /* NewEntryViewController.m */; };
+		BD17520A1B7E1AA1005A7A32 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1752091B7E1AA1005A7A32 /* EntryViewController.m */; };
+		BD78FAA41B83169000B96E8E /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78FAA31B83169000B96E8E /* EntryListTableViewController.m */; };
+		BD78FAA71B83480000B96E8E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78FAA61B83480000B96E8E /* NavigationController.m */; };
+		BD78FAAA1B834C2300B96E8E /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78FAA91B834C2300B96E8E /* EntryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +49,14 @@
 		BD1752031B7E0A1A005A7A32 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		BD1752051B7E0F57005A7A32 /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = "<group>"; };
 		BD1752061B7E0F57005A7A32 /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = "<group>"; };
-		BD1752081B7E1AA1005A7A32 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
-		BD1752091B7E1AA1005A7A32 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
+		BD1752081B7E1AA1005A7A32 /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
+		BD1752091B7E1AA1005A7A32 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
+		BD78FAA21B83169000B96E8E /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		BD78FAA31B83169000B96E8E /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		BD78FAA51B83480000B96E8E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		BD78FAA61B83480000B96E8E /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		BD78FAA81B834C2300B96E8E /* EntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
+		BD78FAA91B834C2300B96E8E /* EntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,17 +100,23 @@
 			children = (
 				BD1751DD1B7E0A01005A7A32 /* AppDelegate.h */,
 				BD1751DE1B7E0A01005A7A32 /* AppDelegate.m */,
-				BD1751E61B7E0A01005A7A32 /* Main.storyboard */,
-				BD1752081B7E1AA1005A7A32 /* NewEntryViewController.h */,
-				BD1752091B7E1AA1005A7A32 /* NewEntryViewController.m */,
-				BD1751E91B7E0A01005A7A32 /* Images.xcassets */,
-				BD1751EB1B7E0A01005A7A32 /* LaunchScreen.xib */,
-				BD1751E01B7E0A01005A7A32 /* Diary.xcdatamodeld */,
-				BD1752051B7E0F57005A7A32 /* DiaryEntry.h */,
-				BD1752061B7E0F57005A7A32 /* DiaryEntry.m */,
-				BD1751D91B7E0A01005A7A32 /* Supporting Files */,
+				BD78FAA51B83480000B96E8E /* NavigationController.h */,
+				BD78FAA61B83480000B96E8E /* NavigationController.m */,
+				BD78FAA21B83169000B96E8E /* EntryListTableViewController.h */,
+				BD78FAA31B83169000B96E8E /* EntryListTableViewController.m */,
+				BD1752081B7E1AA1005A7A32 /* EntryViewController.h */,
+				BD1752091B7E1AA1005A7A32 /* EntryViewController.m */,
+				BD78FAA81B834C2300B96E8E /* EntryCell.h */,
+				BD78FAA91B834C2300B96E8E /* EntryCell.m */,
 				BD1752021B7E0A1A005A7A32 /* CoreDataStack.h */,
 				BD1752031B7E0A1A005A7A32 /* CoreDataStack.m */,
+				BD1752051B7E0F57005A7A32 /* DiaryEntry.h */,
+				BD1752061B7E0F57005A7A32 /* DiaryEntry.m */,
+				BD1751E01B7E0A01005A7A32 /* Diary.xcdatamodeld */,
+				BD1751E91B7E0A01005A7A32 /* Images.xcassets */,
+				BD1751E61B7E0A01005A7A32 /* Main.storyboard */,
+				BD1751EB1B7E0A01005A7A32 /* LaunchScreen.xib */,
+				BD1751D91B7E0A01005A7A32 /* Supporting Files */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -234,10 +249,13 @@
 			files = (
 				BD1752041B7E0A1A005A7A32 /* CoreDataStack.m in Sources */,
 				BD1751E21B7E0A01005A7A32 /* Diary.xcdatamodeld in Sources */,
-				BD17520A1B7E1AA1005A7A32 /* NewEntryViewController.m in Sources */,
+				BD78FAA71B83480000B96E8E /* NavigationController.m in Sources */,
+				BD78FAAA1B834C2300B96E8E /* EntryCell.m in Sources */,
+				BD17520A1B7E1AA1005A7A32 /* EntryViewController.m in Sources */,
 				BD1752071B7E0F57005A7A32 /* DiaryEntry.m in Sources */,
 				BD1751DF1B7E0A01005A7A32 /* AppDelegate.m in Sources */,
 				BD1751DC1B7E0A01005A7A32 /* main.m in Sources */,
+				BD78FAA41B83169000B96E8E /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +446,7 @@
 				BD1751FE1B7E0A01005A7A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD1751FF1B7E0A01005A7A32 /* Build configuration list for PBXNativeTarget "DiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +455,7 @@
 				BD1752011B7E0A01005A7A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
