@@ -20,6 +20,8 @@
 		BD78FAA41B83169000B96E8E /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78FAA31B83169000B96E8E /* EntryListTableViewController.m */; };
 		BD78FAA71B83480000B96E8E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78FAA61B83480000B96E8E /* NavigationController.m */; };
 		BD78FAAA1B834C2300B96E8E /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78FAA91B834C2300B96E8E /* EntryCell.m */; };
+		BDF67BA51B84602100FDF17C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF67BA41B84602100FDF17C /* QuartzCore.framework */; };
+		BDF67BA71B8463CF00FDF17C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF67BA61B8463CF00FDF17C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		BD78FAA61B83480000B96E8E /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		BD78FAA81B834C2300B96E8E /* EntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
 		BD78FAA91B834C2300B96E8E /* EntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
+		BDF67BA41B84602100FDF17C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BDF67BA61B8463CF00FDF17C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF67BA71B8463CF00FDF17C /* CoreLocation.framework in Frameworks */,
+				BDF67BA51B84602100FDF17C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,8 @@
 		BD1751CD1B7E0A01005A7A32 = {
 			isa = PBXGroup;
 			children = (
+				BDF67BA61B8463CF00FDF17C /* CoreLocation.framework */,
+				BDF67BA41B84602100FDF17C /* QuartzCore.framework */,
 				BD1751D81B7E0A01005A7A32 /* Diary */,
 				BD1751F51B7E0A01005A7A32 /* DiaryTests */,
 				BD1751D71B7E0A01005A7A32 /* Products */,

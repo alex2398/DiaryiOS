@@ -8,6 +8,7 @@
 
 #import "EntryCell.h"
 #import "DiaryEntry.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface EntryCell()
 
@@ -36,7 +37,7 @@
 
 + (CGFloat) heightForEntry:(DiaryEntry *)entry {
     const CGFloat topMargin = 35.0f;
-    const CGFloat bottomMargin  = 80.0f;
+    const CGFloat bottomMargin = 80.0f;
     const CGFloat minHeight = 85.0f;
     
     UIFont *font = [UIFont systemFontOfSize:[UIFont systemFontSize]];
@@ -77,8 +78,13 @@
         self.moodImage.image = [UIImage imageNamed:@"icn_bad"];
 
     }
-
-
+    // Hacemos la imagen circular con cornerRadius = a la mitad del ancho de la imagen (¿?)
+    self.mainImage.layer.cornerRadius = CGRectGetWidth(self.mainImage.frame) / 2.0f;
     
+    if (entry.location.length > 0) {
+        self.locationLabel.text = entry.location;
+    } else {
+        self.locationLabel.text = @"No location";
+    }
 }
 @end

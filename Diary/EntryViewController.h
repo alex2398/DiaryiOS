@@ -12,12 +12,11 @@
 
 @interface EntryViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-- (IBAction)doneWhenPressed:(id)sender;
-- (IBAction)cancelWhenPressed:(id)sender;
-- (void) dismissSelf;
 
 
 @property (strong, nonatomic) DiaryEntry *entry;
+
+
+
 
 @end

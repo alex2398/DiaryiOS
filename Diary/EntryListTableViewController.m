@@ -29,6 +29,7 @@
     // Ejecutamos la consulta para devolver los resultados
     [self.fetchedResultsController performFetch:nil];
     
+    
 
 }
 
@@ -119,10 +120,7 @@
     
     [coreDataStack.managedObjectContext deleteObject:entry];
     [coreDataStack saveContext];
-    
-    
-    
-    
+
 }
 
 #pragma mark - Actualizacion controlador con animaciones
